@@ -1,4 +1,4 @@
-# Batch PDF Compressor
+# PDF_Compressor.cmd
 
 Version 1.0 du 12/12/2020 - Par Tlem33  
 https://github.com/Tlem33/Batch_PDF_Compressor

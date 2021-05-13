@@ -1,9 +1,13 @@
+:: Batch_PDF_Compressor.cmd - Par Tlem33
+:: Ce batch permet la compresssion rapide de fichiers PDF.
+::
+:: Lire le fichier README.md pour plus d'informations.
+::
+:: Version 1.1 du 13/05/2021
 :: https://github.com/Tlem33/Batch_PDF_Compressor
-:: Batch_PDF_Compressor.cmd - Version 1.0 du 12/12/2020
 ::
 :: ANSI -> OEM : é = ‚ | è = Š | à = … | â = ƒ | ê = ˆ | î = Œ | ô = “ | û = – | ç = ‡
 ::
-
 
 @@Echo Off
 Cls
@@ -11,7 +15,7 @@ Cls
 
 :: Déclaration des variables
 SETLOCAL ENABLEDELAYEDEXPANSION
-Set Version=1.0
+Set Version=1.1
 Set Count=0
 Set GsWinExe=gswin64c.exe
 Set GsWinDll=gsdll64.dll
@@ -117,14 +121,13 @@ Echo          6 - Quitter
 Echo.
 Echo.
 Echo.
-Set /P CompMode=Entrez votre choix : 1 , 2, 3, 4, 5 ou 6 (Choix 2 par d‚faut) :
-If /I "%CompMode%" EQU "" Set CompMode=ebook &Goto :Start
-If /I "%CompMode%" EQU "1" Set CompMode=screen &Goto :Start
-If /I "%CompMode%" EQU "2" Set CompMode=ebook &Goto :Start
-If /I "%CompMode%" EQU "3" Set CompMode=default &Goto :Start
-If /I "%CompMode%" EQU "4" Set CompMode=printer &Goto :Start
-If /I "%CompMode%" EQU "5" Set CompMode=prepress &Goto :Start
-If /I "%CompMode%" EQU "6" Exit
+Choice /C 123456 /M "Entrez votre choix :"
+If Errorlevel 6 Exit
+If Errorlevel 5 Set CompMode=prepress & Goto :Start
+If Errorlevel 4 Set CompMode=printer &Goto :Start
+If Errorlevel 3 Set CompMode=default &Goto :Start
+If Errorlevel 2 Set CompMode=ebook &Goto :Start
+If Errorlevel 1 Set CompMode=screen &Goto :Start
 Goto :Menu
 
 
@@ -157,10 +160,9 @@ If Not Exist "%FileDir%~TestDir" (
 
 :Choice
 Cls
-Set /P Keep=Souhaitez-vous conserver les fichiers originaux ? (O ou N) (Oui par d‚faut) :
-If /I "%Keep%" EQU "" Set Keep=1 & Goto :Processing
-If /I "%Keep%" EQU "O" Set Keep=1 & Goto :Processing
-If /I "%Keep%" EQU "N" Set Keep=0 & Goto :Processing
+Choice /C on /M "Souhaitez-vous conserver les fichiers originaux ?"
+If Errorlevel 2 Set Keep=0 & Goto :Processing
+If Errorlevel 1 Set Keep=1 & Goto :Processing
 Goto :Choice
 
 

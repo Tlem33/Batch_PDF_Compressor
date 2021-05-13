@@ -1,6 +1,6 @@
 # PDF_Compressor.cmd
 
-Version 1.0 du 12/12/2020 - Par Tlem33  
+Version 1.1 du 13/05/2021 - Par Tlem33  
 https://github.com/Tlem33/Batch_PDF_Compressor
 
 ***
@@ -49,9 +49,9 @@ Doc3.pdf = fichier composé de texte et d'images couleur
 
 ## UTILISATION :
 
-Faites un glisser/déposer de un ou plusieurs fichiers PDF sur le batch (Les dossiers et sous dossiers sont pris en compte).  
+Faites un glisser/déposer d'un ou plusieurs fichiers PDF sur le batch (Les dossiers et sous dossiers sont pris en compte).  
 A l'affichage du menu principal, choisissez la compression désirée puis validez.  
-Pour finir choisissez si vous conservez le fichier original.
+Pour finir choisissez si vous conservez les fichier original.
 
 *** 
 
@@ -65,7 +65,7 @@ Testé sous Windows 10
 
 Licence [MIT](https://fr.wikipedia.org/wiki/Licence_MIT)  
 
-Droit d'auteur (c) 2020 Tlem33  
+Droit d'auteur (c) 2021 Tlem33  
 
 Une autorisation est accordée, gratuitement, à toute personne obtenant une copie de ce logiciel  
 et des fichiers de documentation associés (le «logiciel»), afin de traiter le logiciel sans restriction,  
@@ -89,3 +89,6 @@ INDIRECT AVEC L’UTILISATION DE CE LOGICIEL.
 
 12/12/2020 - Version 1.0  
     - Première version.  
+
+13/05/2021 - Version 1.1  
+    - Remplacement de la méhode de choix (Evite l'utilisation de la touche Entrée).    

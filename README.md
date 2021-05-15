@@ -3,7 +3,7 @@
 Version 1.1 du 13/05/2021 - Par Tlem33  
 https://github.com/Tlem33/Batch_PDF_Compressor
 
-***
+---
 
 ## DESCRIPTION :
 
@@ -46,6 +46,7 @@ Doc3.pdf = fichier composé de texte et d'images couleur
    | printer  | 105 835 Ko | 20 606 Ko |  77 084 Ko |  
    | prepress | 105 825 Ko | 20 706 Ko |  79 060 Ko |  
 
+---
 
 ## UTILISATION :
 
@@ -53,13 +54,15 @@ Faites un glisser/déposer d'un ou plusieurs fichiers PDF sur le batch (Les doss
 A l'affichage du menu principal, choisissez la compression désirée puis validez.  
 Pour finir choisissez si vous conservez les fichier original.
 
-*** 
+---
 
 ## SYSTEME(S) :
 
-Testé sous Windows 10
+     Windows 7
+     Windows 8  
+     Windows 10  
 
-***
+---
 
 ## LICENCE :
 
@@ -91,4 +94,6 @@ INDIRECT AVEC L’UTILISATION DE CE LOGICIEL.
     - Première version.  
 
 13/05/2021 - Version 1.1  
-    - Remplacement de la méhode de choix (Evite l'utilisation de la touche Entrée).    
+    - Remplacement de la méhode de choix (Evite l'utilisation de la touche Entrée).  
+
+---
